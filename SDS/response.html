@@ -1,0 +1,16 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+</script>
+<button onclick="copyToClipboard('#p1')">Doesn't fit the theme</button>
+<button onclick="copyToClipboard('#p2')">Not Made for the studio</button>
+<br />
+<p id="p1">Hi there :) This doesn't seem to fit the theme of the studio (if I missed something, let me know!). Be sure to check out the studio description ff you need some help getting started on a project for this studio ^.^</p>
+<p id="p2">Hi there! We are looking for projects that were made specifically for this studio. Be sure to check out the studio description if you need some help getting started on a project for this studio ^.^ Looking forward to seeing what you will make!</p><br/>
+
