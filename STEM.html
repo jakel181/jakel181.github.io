@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display the position of the element "Apple":</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var scan= prompt("ID");
+  var ids = ["1096", "1071", "1072", "1076", "1078", "1085", "1087", "1090"];
+  var a = ids.indexOf(scan);
+  document.getElementById("demo").innerHTML = a;
+}
+</script>
+
+<p><b>Note:</b> The indexOf method was introduced in JavaScript 1.6, and does not work in Internet Explorer 8 and earlier versions.</p>
+
+</body>
+</html>
